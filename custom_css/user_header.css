@@ -1,0 +1,130 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background for the body */
+}
+
+/* Header Styles */
+.header {
+    background-color: #343a40; /* Dark background for the header */
+    color: white;
+    padding: 10px 20px;
+}
+
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #495057; /* Darker background on hover */
+    color: #f8f9fa; /* Light color on hover */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons .fas {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Account Box Styles */
+.account-box {
+    background-color: #495057; /* Slightly lighter than header */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.account-box p {
+    margin: 5px 0;
+}
+
+.delete-btn {
+    display: inline-block;
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Message Box Styles */
+.message {
+    background-color: #ffc107; /* Bootstrap warning color */
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.message i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar a {
+        padding: 10px;
+        text-align: center;
+    }
+    .account-box {
+        margin-top: 10px;
+    }
+}

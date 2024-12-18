@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1.title {
+    text-align: center;
+    color: #333;
+}
+
+/* Grid Layout */
+.crud-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns */
+    margin-bottom: 30px;
+}
+
+.crud-form, .crud-table {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form Styles */
+.box {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+.empty {
+    text-align: center;
+    color: #888;
+}
+
+/* Action Button Styles */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .crud-container {
+        grid-template-columns: 1fr; /* Stack in a single column on smaller screens */
+    }
+}
+.edit-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    padding: 8px 12px;        /* Padding around the text */
+    text-align: center;        /* Center text */
+    text-decoration: none;     /* Remove underline */
+    display: inline-block;     /* Make it inline-block */
+    border: none;              /* Remove border */
+    border-radius: 4px;       /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 14px;          /* Font size */
+}
+
+.edit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

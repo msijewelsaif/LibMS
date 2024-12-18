@@ -1,0 +1,127 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 30px;
+}
+
+/* Container to hold guidelines and form side by side */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Guidelines styling */
+.guidelines {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.guidelines h2 {
+    color: #2d3e50;
+    margin-bottom: 10px;
+}
+
+.guidelines ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.guidelines li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Form styling */
+.borrow-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.borrow-form label {
+    font-weight: bold;
+}
+
+.borrow-form input, .borrow-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.borrow-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.borrow-form button:hover {
+    background-color: #45a049;
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.modal button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal button:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guidelines, .borrow-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

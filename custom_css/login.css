@@ -1,0 +1,110 @@
+.show-password {
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.form-container {
+    position: relative;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.card-body {
+    display: flex;
+    justify-content: center;  /* Horizontally center the image */
+    align-items: center;       /* Vertically center the image */
+    height: 100%;              /* Full height of the container */
+    min-height: 200px;         /* Set a minimum height for the container */
+}
+
+.login_icon {
+    width: 100px;            
+    height: 100px;             
+    object-fit: cover;        
+    margin: 0;                
+}
+#headerTitle {
+    background-color: #3498db; /* Set a background color */
+    color: white;              /* Set text color to white for contrast */
+    padding: 15px;            /* Add padding for spacing */
+    border-radius: 5px;       /* Optional: rounded corners for a softer look */
+    animation: fadeIn 1s ease-in-out; /* Apply animation */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Ensure these styles are included for button appearance */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Primary button styles */
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Secondary button styles */
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}

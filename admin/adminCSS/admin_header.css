@@ -1,0 +1,101 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+    background-color: #4a4a4a; /* Dark background for header */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding */
+    position: relative; /* Positioning for icons */
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .navbar {
+    display: flex;
+    gap: 15px; /* Space between navbar items */
+}
+
+.header .navbar a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.header .navbar a:hover {
+    background-color: #6c757d; /* Change background on hover */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons .fas {
+    font-size: 20px; /* Icon size */
+    margin-left: 15px; /* Space between icons */
+    cursor: pointer; /* Pointer cursor */
+    color: #fff; /* White icons */
+}
+
+.account-box {
+    background-color: #333; /* Dark background */
+    padding: 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.account-box p {
+    margin: 5px 0; /* Margin for paragraphs */
+    color: #fff; /* White text */
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Make it a block element */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Message styles */
+.message {
+    background-color: #28a745; /* Green background for messages */
+    color: #fff; /* White text */
+    padding: 10px; /* Padding */
+    margin-bottom: 15px; /* Space below messages */
+    border-radius: 5px; /* Rounded corners */
+    display: flex;
+    justify-content: space-between; /* Space between message and close icon */
+    align-items: center;
+}
+
+.message i {
+    cursor: pointer; /* Pointer cursor for close icon */
+}
